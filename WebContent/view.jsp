@@ -41,9 +41,9 @@
 	<td><%=resultSet.getString("staff_category") %></td>
 	
 		<td align="center">
-		<a href="updateDetails.jsp?id=<%=resultSet.getString("staff_id")%>"><button onClick="myFunction" type="button" class="update">Update</button></a>
+		<a href="updateDetails.jsp?id=<%=resultSet.getString("staff_id")%>"><button onClick="myFunction()" type="button" class="update">Update</button></a>
 		&nbsp;
-		<a href="delete.jsp?id=<%=resultSet.getString("staff_id") %>"><button onClick="myFunction" type="button" class="delete">Delete</button></a>
+		<a href="delete.jsp?id=<%=resultSet.getString("staff_id") %>"><button onClick="myFunction()" type="button" class="delete">Delete</button></a>
 		</td>
 	</tr>
 	
