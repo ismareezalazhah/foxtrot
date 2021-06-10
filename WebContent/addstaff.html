@@ -1,28 +1,58 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html style="font-size: 16px;">
-
-<meta charset="ISO-8859-1">
-<title>ADD STAFF</title>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Warung D' Tebing">
-	<link rel="stylesheet" href="css/style.css"/>
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>ADD NEW STAFF</title>
-
-	<div class="banner">Foxtrot</div>
-	<div class="menu">
-		<a href="view.jsp">Main Menu</a>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="view.jsp">View Staff</a>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="addstaff.html">Add New Staff</a>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href=".jsp">View Food</a>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href=".jsp">Add New Food</a>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-	</div>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="register.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.3.7, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+    
+    
+<script type="application/ld+json">
+{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}
+</script>
+    <meta property="og:title" content="MENU(MANAGER)">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body">
+  
+  <header class="u-clearfix u-grey-90 u-header u-header" id="sec-1290">
+  <div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem;">
+            <a class="u-button-style u-custom-text-color u-custom-text-hover-color u-nav-link" href="#">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+			<li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-grey-15" href="MENU(MANAGER).html" style="padding: 14px 4px;">MENU</a><div class="u-nav-popup"></div></li>
+			<li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-grey-15" href="managestaff.html" style="padding: 14px 4px;">MANAGE STAFF</a><div class="u-nav-popup"></div></li>
+			<li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-grey-15" href="managerprofile.html" style="padding: 14px 4px;">ACCOUNT</a><div class="u-nav-popup"></div></li>
+			<li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-grey-15" href="index.html" style="padding: 14px 4px;">LOGOUT</a><div class="u-nav-popup"></div></li>
+			</ul>
+		  </div>
+        </nav>	
+   </div>
+   </header>
 
   <body class="u-body">
 
@@ -47,12 +77,32 @@
 							<input type="text" name="staff_phone" placeholder="PHONE" required> <p/>
 							<input type="text" name="staff_category" placeholder="CATEGORY" required> <p/>
 							
-							<input type="submit" value="submit"/>
+							<button onclick="myFunction()" id="submit" href="managestaff.html">Done</button>
+							
+							<script>
+								function myFunction() {
+								  alert("Account Create Successful!");
+								}
+								</script>							
 						</center>				
 						</p>
 						</div>
 					</form>
 
+    </section>
+	       <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-61d1"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">PROTOTYPE ONLY</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Editor Free</span>
+      </a>. 
     </section>
 
   </body>
