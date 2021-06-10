@@ -1,4 +1,9 @@
 <link rel="stylesheet" href="css/style.css"/>
+<script>
+function updateFunction() {
+	alert("Update Successfully");
+	}
+</script>
 <%@page import="java.sql.*"%>
 <%@ include file="header.html"%>
 	<%
@@ -70,7 +75,7 @@
 	<label>CATEGORY: </label>
 	<input type="text" name="staff_category" value="<%=resultSet.getString("staff_category") %>" required>
 	<br><br>
-	<input type="submit" value="submit">
+	<input onClick="updateFunction()" type="submit" value="submit">
 		</center>				
 	</div>
 	</form>
