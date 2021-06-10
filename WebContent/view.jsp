@@ -1,5 +1,10 @@
 <%@page import="java.sql.*"%>
 <link rel="stylesheet" href="css/style.css"/>
+<script>
+	function myFunction() {
+	alert("DONE");
+	}
+</script>
 <%@ include file="header.html"%>
 <h2 align="center"><font><strong>STAFF DETAILS LIST</strong></font></h2>
 <table align="center" cellpadding="5" cellspacing="5" border="1">
@@ -36,13 +41,14 @@
 	<td><%=resultSet.getString("staff_category") %></td>
 	
 		<td align="center">
-		<a href="updateDetails.jsp?id=<%=resultSet.getString("staff_id")%>"><button type="button" class="update">Update</button></a>
+		<a href="updateDetails.jsp?id=<%=resultSet.getString("staff_id")%>"><button onClick="myFunction" type="button" class="update">Update</button></a>
 		&nbsp;
-		<a href="delete.jsp?id=<%=resultSet.getString("staff_id") %>"><button type="button" class="delete">Delete</button></a>
+		<a href="delete.jsp?id=<%=resultSet.getString("staff_id") %>"><button onClick="myFunction" type="button" class="delete">Delete</button></a>
 		</td>
 	</tr>
 	
 	<% 
+	
 	}
 	
 	} catch (Exception e) {
