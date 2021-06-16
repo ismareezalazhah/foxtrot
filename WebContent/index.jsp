@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="newcss/indexstyle.css"/>
 <title>Warung D'Tebing Delivery System</title>
 </head>
 
