@@ -28,10 +28,10 @@
 	    <label>
 	      <input type="checkbox" checked="checked" name="remember"> Remember me
 	    </label><br>
-<!--	<button type="submit">Don't Have Account Yet? Register Now</button>
+	    <button type="submit">Don't Have Account Yet? Register Now</button>
 	    <button type="submit">Login</button><br>
--->	    
-		<a href="https://foxtrot-fooddelivery-system.herokuapp.com/view.jsp"><button type="button" class="view">Login</button>
+	    
+		<a href="https://foxtrot-fooddelivery-system.herokuapp.com/view.jsp"><button type="button" class="view">Tekan Sini (Redirect Database)</button>
 	  </div>
 	</form>
 </body>
