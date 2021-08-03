@@ -53,7 +53,7 @@ public class CustomerLoginServlet extends HttpServlet {
 			else
 			{
 				request.setAttribute("WrongLoginMsg", authorize); // wrong login error message
-				RequestDispatcher rd = request.getRequestDispatcher("InvalidLogin.jsp"); // show error in the page
+				RequestDispatcher rd = request.getRequestDispatcher("CustomerLogin.jsp"); // show error in the page
 				rd.include(request, response);
 			}
 		}
