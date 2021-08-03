@@ -139,6 +139,9 @@
 	    <div class="row"><div class="col-sm-3"><b class="mb-0">Progress</b></div>
 	    <div class="col-sm-9 text-secondary"><c:out value="${od.orderProgress}"/></div></div>
 	    <hr>
+	    <div class="row"><div class="col-sm-3"><b class="mb-0">Order Recipient</b></div>
+	    <div class="col-sm-9 text-secondary"><c:out value="${od.custEmail}"/></div></div>
+	    <hr>
 	    <div class="row"><div class="col-sm-3"><b class="mb-0">Delivered By</b></div>
 	    <div class="col-sm-9 text-secondary"><c:out value="${ri.riderName}"/></div></div>
 	    <hr>
