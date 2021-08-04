@@ -78,6 +78,13 @@
 		     <li><a href="ManagerAddMenu.jsp">New Menu</a></li>
 			 </ul></div>
 		  </li>
+			<li class="sidebar-dropdown">
+		  <a href="#"><i class="fa fa-user"></i><span>Customer Management</span></a>
+		     <div class="sidebar-submenu">
+		     <ul>
+		     <li><a href="listCustomerMicroservice.jsp">Customer Directory</a></li>
+			 </ul></div>
+		  </li>
 		  
 		  <li><a href="StaffLogoutServlet"><i class="fa fa-sign-out-alt"></i><span>Logout</span></a></li></ul>
 		</div></div>
