@@ -16,6 +16,16 @@
 	<link rel="stylesheet" href="css/Flogin.css">
 
 </head>
+<script>
+function myFunction() {
+  var x = document.getElementById("custPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <body>
 	<br>
 	<div class="sidenav">
@@ -30,8 +40,9 @@
                 </div>
                 <div class="form-group">
                    <label>Password</label>
-                   <input type="password" class="form-control" placeholder="Password" name="custPassword" required="required">
+                   <input type="password" class="form-control" placeholder="Password" name="custPassword" id="custPassword" required="required">
                 </div>
+		<input type="checkbox" onclick="myFunction()">Show Password
                 <a href="CustomerRegister.jsp"><button type="button" class="btn btn-secondary">Register</button></a>
                 <button type="submit" name="btn_login" value="login" class="btn btn-black">Login</button>
                 
