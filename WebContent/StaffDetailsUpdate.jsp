@@ -15,6 +15,16 @@
      
 <!DOCTYPE html>
 <html>
+<script>
+function passwordwrapper() {
+  var x = document.getElementById("riderPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,13 +153,5 @@ $("#show-sidebar").click(function() {
   $(".page-wrapper").addClass("toggled");
 });  
 });
-function passwordwrapper() {
-  var x = document.getElementById("staffPassword");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
 </script>
 </html>
