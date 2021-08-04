@@ -61,8 +61,6 @@ window.onload = function() {
         var tr = table.insertRow(-1);                   // TABLE ROW.
 
         for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
             tr.appendChild(th);
         }
 
