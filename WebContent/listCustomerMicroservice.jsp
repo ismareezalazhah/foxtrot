@@ -38,7 +38,8 @@
 <style>
 th{
 text-align:center;
-	width:50%;}
+	width:20%;}
+	td{text-align:left;}
 </style>
 </head>
 <script>
