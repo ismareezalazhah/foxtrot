@@ -160,7 +160,9 @@ window.onload = function() {
 		  <br>
 		  <table class="table table-bordered table-striped">
 		    <tbody id="myTable">
+		     <tr class="active-row">	
 		     <td id="showData"></td>
+			    </tr>
 		    </tbody>
 		  </table>
 
