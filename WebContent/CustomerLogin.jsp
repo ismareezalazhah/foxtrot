@@ -42,7 +42,7 @@ function myFunction() {
                    <label>Password</label>
                    <input type="password" class="form-control" placeholder="Password" name="custPassword" id="custPassword" required="required">
                 </div>
-		<input type="checkbox" onclick="myFunction()">Show Password
+		<input type="checkbox" onclick="myFunction()">Show Password<br>
                 <a href="CustomerRegister.jsp"><button type="button" class="btn btn-secondary">Register</button></a>
                 <button type="submit" name="btn_login" value="login" class="btn btn-black">Login</button>
                 
