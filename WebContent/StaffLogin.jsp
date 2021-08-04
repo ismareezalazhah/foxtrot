@@ -43,6 +43,7 @@ function myFunction() {
                 <div class="form-group">
                    <label>Password</label>
                    <input type="password" class="form-control" placeholder="Password" name="staffPassword" id="staffPassword" required="required">
+		   <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
                 <div class="form-group">
                    <label>Category : </label>
