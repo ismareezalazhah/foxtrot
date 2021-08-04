@@ -85,8 +85,9 @@
 				    </div>
 				    <div class="form-group">
 				      <label>Password :</label>
-				      <input type="text" class="form-control" name="staffPassword" value="<c:out value="${st.staffPassword}" />"/>
+				      <input type="password" class="form-control" name="staffPassword" value="<c:out value="${st.staffPassword}" />"/>
 				    </div>
+				    <input type="checkbox" onclick="myFunction()">Show Password<br>
 				    <div class="form-group">
 				      <label>Contact No:</label>
 				      <input type="text" class="form-control" name="staffPhone" value="<c:out value="${st.staffPhone}" />"/>
@@ -142,5 +143,13 @@ $("#show-sidebar").click(function() {
   $(".page-wrapper").addClass("toggled");
 });  
 });
+function myFunction() {
+  var x = document.getElementById("staffPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 </script>
 </html>
