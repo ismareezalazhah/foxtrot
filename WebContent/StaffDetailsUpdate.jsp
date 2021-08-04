@@ -95,7 +95,7 @@ function passwordwrapper() {
 				    </div>
 				    <div class="form-group">
 				      <label>Password :</label>
-				      <input type="password" class="form-control" name="staffPassword" value="<c:out value="${st.staffPassword}" />"/>
+				      <input type="password" class="form-control" name="staffPassword" id="staffPassword" value="<c:out value="${st.staffPassword}" />"/>
 					<input type="checkbox" onclick="passwordwrapper()">Show Password<br>
 				    </div>
 				    <div class="form-group">
