@@ -36,6 +36,9 @@
 <link rel="stylesheet" href="css/BackgroundBody.css">
 <title>List Customer</title>
 <style>
+th{
+text-align:center;
+	width:50%;}
 </style>
 </head>
 <script>
@@ -159,13 +162,11 @@ window.onload = function() {
 	  <div class="container">
 		  <br>
 		  <table class="table table-bordered table-striped">
-	   	    <thead>
 		    <tbody id="myTable">
 		     <tr class="active-row">	
 		     <td id="showData"></td>
 			    </tr>
 		    </tbody>
-		  </thead>
 		  </table>
 
 		</div>
