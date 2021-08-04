@@ -17,7 +17,7 @@
 <html>
 <script>
 function passwordwrapper() {
-  var x = document.getElementById("riderPassword");
+  var x = document.getElementById("staffPassword");
   if (x.type === "password") {
     x.type = "text";
   } else {
