@@ -17,6 +17,16 @@
 	
 
 </head>
+<script>
+function myFunction() {
+  var x = document.getElementById("staffPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <body>
 	<br>
 	<div class="sidenav">
@@ -32,7 +42,7 @@
                 </div>
                 <div class="form-group">
                    <label>Password</label>
-                   <input type="password" class="form-control" placeholder="Password" name="staffPassword" required="required">
+                   <input type="password" class="form-control" placeholder="Password" name="staffPassword" id="staffPassword" required="required">
                 </div>
                 <div class="form-group">
                    <label>Category : </label>
