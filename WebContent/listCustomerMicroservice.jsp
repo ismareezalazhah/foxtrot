@@ -61,6 +61,8 @@ window.onload = function() {
         var tr = table.insertRow(-1);                   // TABLE ROW.
 
         for (var i = 0; i < col.length; i++) {
+	    var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
             tr.appendChild(th);
         }
 
@@ -157,11 +159,13 @@ window.onload = function() {
 	  <div class="container">
 		  <br>
 		  <table class="table table-bordered table-striped">
+	   	    <thead>
 		    <tbody id="myTable">
 		     <tr class="active-row">	
 		     <td id="showData"></td>
 			    </tr>
 		    </tbody>
+		  </thead>
 		  </table>
 
 		</div>
