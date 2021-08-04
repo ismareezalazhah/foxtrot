@@ -43,6 +43,7 @@ function myFunction() {
                 <div class="form-group">
                    <label>Password</label>
                     <input type="password" class="form-control" placeholder="Password" name="riderPassword" id="riderPassword" required="required">
+		     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
 
                 <button type="submit" name="btn_login" value="login" class="btn btn-black">Login</button>
