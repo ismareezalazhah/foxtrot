@@ -46,7 +46,7 @@ function myFunction() {
 		   <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
                 <div class="form-group">
-                   <label>Category : </label>
+                   <label>Category  </label>
             	   <select name="staffCategory" style="width:420px; height:35px">
 					   <option value ="staff">Staff</option>
 					   <option value ="manager">Manager</option>
