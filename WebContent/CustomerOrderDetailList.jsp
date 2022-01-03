@@ -16,82 +16,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<!-- NAVBAR BOOTSTRAP -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<!-- NAVBAR BOOTSTRAP -->
+  <title> Order Details </title>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/sideBar.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
-
-
-<title>Order Details List</title>
 </head>
-<body style="background-color:#f5deb3;">
 
-	<!-- SIDENAVBAR-->
-	
-	<div class="page-wrapper chiller-theme toggled">
-	  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#"><i class="fas fa-bars"></i></a>
-	  <nav id="sidebar" class="sidebar-wrapper">
-	    <div class="sidebar-content">
-	    <div class="sidebar-brand"><a href="CustomerPage.jsp">FOXTROT</a><div id="close-sidebar"><i class="fas fa-times"></i></div></div>
-	      
-	    <div class="sidebar-header">
-	       <div class="user-pic"><img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture"></div>
-	       <div class="user-info"><span class="user-role">Welcome, <br> <%=session.getAttribute("CurrentSessionUser")%>!</span></div>
-	    </div>
+<body class="sub_page">
 
-		<!-- sidebar-search  -->
-		<div class="sidebar-menu">
-		<ul>
-		  <li><a href="CustomerProfileServlet?custEmail=<%=session.getAttribute("CurrentSessionUser") %>"><i class="fa fa-address-card"></i><span>Profile</span></a></li>
-		  <li class="sidebar-dropdown"><a href="#"><i class="fa fa-shopping-cart"></i><span>Orders</span></a>      
-			  <div class="sidebar-submenu">
-			  	<ul>
-			   	<li><a href="CustomerListOrderServlet">Your Order</a></li>
-			    <li><a href="CustomerListMenuServlet">New Order</a></li>
-			    <li><a href="CustomerCart.jsp">Cart</a></li>
-				</ul></div>
-		  </li>
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="CustomerPage.jsp">
+            <span>
+              Warung D'Tebing
+            </span>
+          </a>
 
-		  <li><a href="CustomerLogoutServlet"><i class="fa fa-sign-out-alt"></i><span>Logout</span></a></li></ul>
-		</div></div>
-	  </nav>
-	  
-	  
-	  
-	  <!-- MAIN CONTENT -->
-	  <main class="page-content">
-	  <div class="container-fluid"><h4>- Order Details -</h4><hr></div>
-	  <div id="trainings_blog" class="layout_padding" style="background: #FFFFFF; margin-left:auto; margin-right:auto; width:85%">
-	  <div class="limiter"><div class="container-table100"><div class="wrap-table100"><div class="table100 ver2 m-b-110">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item ">
+                <a class="nav-link" href="CustomerListMenuServlet">Menu </a>
+              </li>
+              <li class="nav-item active ">
+                <a class="nav-link" href="CustomerListOrderServlet">Order  <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CustomerCart.jsp">Cart</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="CustomerProfileServlet?custEmail=<%=session.getAttribute("CurrentSessionUser") %>" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Welcome, <%=session.getAttribute("CurrentSessionUser")%>!</span>
+              </a>
+              <a href="CustomerLogoutServlet" class="order_online">
+                Logout
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
 
-		<!-- ORDER DETAILS TEMPLATE -->
-		<div><div class="purchase overflow-auto">
-	    <main>
-	    
-	    <div class="row">
+  <!-- Receipt section -->
+  
+  <div id="trainings_blog" class="layout_padding" style="background: #FFFFFF; margin-left:auto; margin-right:auto; width:60%">
+  <div class="limiter"><div class="container-table100"><div class="wrap-table100"><div class="table100 ver2 m-b-110">
 
-	    	<div style="margin-left:auto; margin-right:auto;">
-	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/logo.png" width="80px" height="80px"><br>
-	    	<b>Afmar Trading And Services</b><br>&nbsp;
-	    	<b>Warung D'Tebing Receipt</b></div>
+	<!-- ORDER DETAILS TEMPLATE -->
+	<div><div class="purchase overflow-auto">
+	<main>
+	   <div class="row">
+	   	<div style="margin-left:auto; margin-right:auto;">
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/logo.png" width="80px" height="80px"><br>
+	    <b>Afmar Trading And Services</b><br>&nbsp;
+	    <b>Warung D'Tebing Receipt</b></div>
 	    </div><br><br>
-	    
-	                
+	               
 	    <div class="row"><div class="col-sm-12 col-xs-12 table-responsive">
 	    
 	    <table class="table table-condensed" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -146,49 +163,52 @@
 	    <div class="col-sm-9 text-secondary"><c:out value="${pc.bankName}"/></div></div>
 	    <hr>
 	    </div></div></div>
-	    
-	    </main>
-	    </div></div>
-	    
-		</div></div></div></div></div><br><br><br><br><br><br><br><br>
 	  </main>
-	  
 	  <!-- page-content" -->
-	</div>
-   
+	</div></div></div></div></div></div></div>
+
+  <!-- end Receipt section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="">Foxtrot Corporation</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://html.design/" target="_blank">Free Html Templates</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-jQuery(function ($) {
 
-    $(".sidebar-dropdown > a").click(function() {
-  $(".sidebar-submenu").slideUp(200);
-  if (
-    $(this)
-      .parent()
-      .hasClass("active")
-  ) {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .parent()
-      .removeClass("active");
-  } else {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .next(".sidebar-submenu")
-      .slideDown(200);
-    $(this)
-      .parent()
-      .addClass("active");
-  }
-});
-
-$("#close-sidebar").click(function() {
-  $(".page-wrapper").removeClass("toggled");
-});
-$("#show-sidebar").click(function() {
-  $(".page-wrapper").addClass("toggled");
-});  
-});
-</script>
 </html>
