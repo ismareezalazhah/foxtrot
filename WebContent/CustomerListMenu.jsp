@@ -16,159 +16,195 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<!-- NAVBAR BOOTSTRAP -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<!-- MENU BOOTSTRAP -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title> Menu </title>
 
-<link rel="stylesheet" href="css/sideBar.css">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-<link rel="stylesheet" href="css/Fmenu.css">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-<title>Menu List</title>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
-<body style="background-color:#f5deb3;">
 
-	<!-- SIDENAVBAR-->
-	
-	<div class="page-wrapper chiller-theme toggled">
-	  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#"><i class="fas fa-bars"></i></a>
-	  <nav id="sidebar" class="sidebar-wrapper">
-	    <div class="sidebar-content">
-	    <div class="sidebar-brand"><a href="CustomerPage.jsp">FOXTROT</a><div id="close-sidebar"><i class="fas fa-times"></i></div></div>
-	      
-	    <div class="sidebar-header">
-	       <div class="user-pic"><img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture"></div>
-	       <div class="user-info"><span class="user-role">Welcome, <br> <%=session.getAttribute("CurrentSessionUser")%>!</span></div>
-	    </div>
+<body class="sub_page">
 
-		<!-- sidebar-search  -->
-		<div class="sidebar-menu">
-		<ul>
-		  <li><a href="CustomerProfileServlet?custEmail=<%=session.getAttribute("CurrentSessionUser") %>"><i class="fa fa-address-card"></i><span>Profile</span></a></li>
-		  <li class="sidebar-dropdown"><a href="#"><i class="fa fa-shopping-cart"></i><span>Orders</span></a>      
-			  <div class="sidebar-submenu">
-			  	<ul>
-			   	<li><a href="CustomerListOrderServlet">Your Order</a></li>
-			    <li><a href="CustomerListMenuServlet">New Order</a></li>
-			    <li><a href="CustomerCart.jsp">Cart</a></li>
-				</ul></div>
-		  </li>
-		  
-		  <li><a href="CustomerLogoutServlet"><i class="fa fa-sign-out-alt"></i><span>Logout</span></a></li></ul>
-		</div></div>
-	  </nav>
-	  
-	  <!-- MAIN CONTENT -->
-	  <main class="page-content">
-	  
-	  <div id="trainings_blog" class="layout_padding" style="background: #FFFFFF; width:90%; margin-left:auto; margin-right:auto">
-	  <div class="limiter">
-	  <div class="container-table100">
-	  <div class="wrap-table100">
-	  <div class="table100 ver2 m-b-110">
-		
-		
-	    <div class="container"><div class="row"><div class="col-lg-12">
-		<div class="page_title text-center mb-4">
-		<h1>our menu</h1><div class="single_line"></div>
-		</div>
-		</div></div>
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="CustomerPage.jsp">
+            <span>
+              Warung D'Tebing
+            </span>
+          </a>
 
-			<div class="row">
-				<div class="tab-content col-lg-12" id="myTabContent">
-				<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
-				<div class="row">
-				<c:forEach items="${menu}" var="m">
-						<div class="col-md-6">
-						<div class="single_menu">
-						<c:out value="${m.menuImage}"/><img src="data:image/jpg;base64,${m.base64Image}" width="90" height="90"/>
-						<div class="menu_content">
-						<h4><c:out value="${m.menuName}"/><span>RM <c:out value="${m.menuPrice}"/></span></h4>
-						<p><c:out value="${m.menuDesc}"/></p>
-						<a href="CustomerAddCart?action=addtocart&menuid=<c:out value="${m.menuid}" />"><button type="button" class="view">Add To Cart</button></a>
-						</div></div>	
-						</div>
-			    </c:forEach>
-				</div>
-				</div>
-				</div>
-			</div>
-			
-		<!-- Unavailable Menu Content -->
-			
-		<div class="page_title text-center mb-4"><h1>Unavailable Items</h1><div class="single_line"></div></div>
-		<div class="row">
-				<div class="tab-content col-lg-12" id="myTabContent">
-				<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
-				<div class="row">
-				<c:forEach items="${menu2}" var="m2">
-						<div class="col-md-6">
-						<div class="single_menu">
-						<c:out value="${m2.menuImage}"/><img src="data:image/jpg;base64,${m2.base64Image}" width="90" height="90"/>
-						<div class="menu_content">
-						<h4><c:out value="${m2.menuName}"/><span>RM <c:out value="${m2.menuPrice}"/></span></h4>
-						<p><c:out value="${m2.menuDesc}"/></p>
-						<button type="button" class="view">Currently Unavailable</button>
-		   				</div></div>	
-						</div>
-			    </c:forEach>
-				</div>
-				</div>
-				</div>
-		</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
 
-		</div>
-	
-	</div></div></div></div></div><br><br><br><br><br><br>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="CustomerListMenuServlet">Menu <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="CustomerListOrderServlet">Order </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CustomerCart.jsp">Cart</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="CustomerProfileServlet?custEmail=<%=session.getAttribute("CurrentSessionUser") %>" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Welcome, <%=session.getAttribute("CurrentSessionUser")%>!</span>
+              </a>
+              <a href="CustomerLogoutServlet" class="order_online">
+                Logout
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
 
-	  </main>
-	  <!-- page-content" -->
-	</div>
-	
-	    
+  <!-- food section -->
+
+  <section class="food_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Menu
+        </h2>
+      </div>
+
+  
+        <div class="row grid">
+        
+        <c:forEach items="${menu}" var="m">
+        
+          <div class="col-sm-6 col-lg-4 all">
+            <div class="box" style="height:500px; width:350px">
+              <div>
+                <div class="img-box">
+                  <c:out value="${m.menuImage}"/><img src="data:image/jpg;base64,${m.base64Image}"/>
+                </div>
+                <div class="detail-box">
+                  <h5><c:out value="${m.menuName}"/></h5>
+                  <p><c:out value="${m.menuDesc}"/></p>
+                  <div class="options">
+                    <h6>
+                      RM <c:out value="${m.menuPrice}"/>
+                    </h6>
+                    <a href="CustomerAddCart?action=addtocart&menuid=<c:out value="${m.menuid}" />">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g><g><path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" /></g></g>
+                        <g><g><path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4C457.728,97.71,450.56,86.958,439.296,84.91z" /></g></g>
+                        <g><g><path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" /></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </c:forEach>
+          
+          
+          
+          <c:forEach items="${menu2}" var="m2">
+        
+          <div class="col-sm-6 col-lg-4 all Unvailable">
+            <div class="box" style="height:500px; width:350px">
+              <div>
+                <div class="img-box">
+                  <c:out value="${m2.menuImage}"/><img src="data:image/jpg;base64,${m2.base64Image}"/>
+                </div>
+                <div class="detail-box">
+                  <h5><c:out value="${m2.menuName}"/></h5>
+                  <p><c:out value="${m2.menuDesc}"/></p>
+                  <div class="options">
+                    <h6>RM <c:out value="${m2.menuPrice}"/></h6>
+                    <button type="button" class="view">Unavailable</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </c:forEach>
+          </div>
+          </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="">Foxtrot Corporation</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://html.design/" target="_blank">Free Html Templates</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-jQuery(function ($) {
 
-    $(".sidebar-dropdown > a").click(function() {
-  $(".sidebar-submenu").slideUp(200);
-  if (
-    $(this)
-      .parent()
-      .hasClass("active")
-  ) {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .parent()
-      .removeClass("active");
-  } else {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .next(".sidebar-submenu")
-      .slideDown(200);
-    $(this)
-      .parent()
-      .addClass("active");
-  }
-});
 
-$("#close-sidebar").click(function() {
-  $(".page-wrapper").removeClass("toggled");
-});
-$("#show-sidebar").click(function() {
-  $(".page-wrapper").addClass("toggled");
-});  
-});
-</script>
 </html>
