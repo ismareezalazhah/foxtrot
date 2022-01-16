@@ -119,15 +119,15 @@
               </div>
               <div>
               	<label><b>Name :</b></label>
-                <input type="text" class="form-control" name="riderName" value="<c:out value="${ri.riderName}" />"/>
+                <input type="text" class="form-control" name="riderName" required="required" value="<c:out value="${ri.riderName}" />"/>
               </div>
               <div>
               	<label><b>Password :</b></label>
-                <input type="text" class="form-control" name="riderPassword" value="<c:out value="${ri.riderPassword}" />"/>
+                <input type="text" class="form-control" name="riderPassword" required="required" value="<c:out value="${ri.riderPassword}" />"/>
               </div>
               <div>
               	<label><b>Contact No :</b></label>
-                <input type="text" class="form-control" name="riderPhone" value="<c:out value="${ri.riderPhone}" />"/>
+                <input type="text" class="form-control" name="riderPhone" required="required" value="<c:out value="${ri.riderPhone}" />"/>
               </div>
               <div>
               	<label><b>Status :</b></label>
