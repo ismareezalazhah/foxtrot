@@ -145,16 +145,16 @@
           <div class="form_container" >
             <form action="ManagerAddStaffServlet" method="post">
               <div>
-                <input type="text" class="form-control" name="staffName" value="" placeholder="Name" />
+                <input type="text" class="form-control" name="staffName"  required="required" value="" placeholder="Name" />
               </div>
               <div>
-                <input type="text" class="form-control" name="staffPassword" value="" placeholder="Password" />
+                <input type="text" class="form-control" name="staffPassword"  required="required" value="" placeholder="Password" />
               </div>
               <div>
-                <input type="text" class="form-control" name="staffPhone" value="" placeholder="Contact No" />
+                <input type="text" class="form-control" name="staffPhone"  required="required" value="" placeholder="Contact No" />
               </div>
               <div>
-                <select class="form-control nice-select wide" name="staffCategory">
+                <select class="form-control nice-select wide" name="staffCategory" required="required">
                   <option value="" disabled selected>Category</option>
                   <option value="staff">Staff</option>
                   <option value="manager">Manager</option>
