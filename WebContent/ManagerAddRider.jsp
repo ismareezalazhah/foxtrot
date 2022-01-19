@@ -145,13 +145,13 @@
           <div class="form_container" >
             <form action="ManagerAddRiderServlet" method="post">
               <div>
-                <input type="text" class="form-control" name="riderName" value="" placeholder="Name" />
+                <input type="text" class="form-control" name="riderName"  required="required" value="" placeholder="Name" />
               </div>
               <div>
-                <input type="text" class="form-control" name="riderPassword" value="" placeholder="Password" />
+                <input type="text" class="form-control" name="riderPassword"  required="required" value="" placeholder="Password" />
               </div>
               <div>
-                <input type="text" class="form-control" name="riderPhone" value="" placeholder="Contact No" />
+                <input type="text" class="form-control" name="riderPhone"  required="required" value="" placeholder="Contact No" />
               </div>
               <div class="btn_box" >
                 <button type="submit">Register</button>
