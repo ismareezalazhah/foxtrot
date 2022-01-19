@@ -122,23 +122,23 @@
               </div>
               <div>
               	<label><b>Name :</b></label>
-                <input type="text" class="form-control" name="custName" value="<c:out value="${cust.custName}" />"/>
+                <input type="text" class="form-control" name="custName"  required="required" value="<c:out value="${cust.custName}" />"/>
               </div>
               <div>
               	<label><b>Password :</b></label>
-                <input type="text" class="form-control" name="custPassword" value="<c:out value="${cust.custPassword}" />"/>
+                <input type="text" class="form-control" name="custPassword"  required="required" value="<c:out value="${cust.custPassword}" />"/>
               </div>
               <div>
               	<label><b>Gender :</b></label>
-                <input type="text" class="form-control" name="custGender" value="<c:out value="${cust.custGender}" />" readonly/>
+                <input type="text" class="form-control" name="custGender"  required="required" value="<c:out value="${cust.custGender}" />" readonly/>
               </div>
               <div>
               	<label><b>Address :</b></label>
-                <input type="text" class="form-control" name="custAddress" value="<c:out value="${cust.custAddress}" />"/>
+                <input type="text" class="form-control" name="custAddress"  required="required" value="<c:out value="${cust.custAddress}" />"/>
               </div>
               <div>
               	<label><b>Contact No :</b></label>
-                <input type="text" class="form-control" name="custPhone" value="<c:out value="${cust.custPhone}" />"/>
+                <input type="text" class="form-control" name="custPhone"  required="required" value="<c:out value="${cust.custPhone}" />"/>
               </div>
               <div class="btn_box" >
                 <button type="submit">Update</button>
