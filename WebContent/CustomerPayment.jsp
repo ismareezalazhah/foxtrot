@@ -152,11 +152,11 @@
           <br>
             <label>Payment Method</label>
               <div>
-                <input type="text" name="paymentType" class="form-control" value="Card" readonly/>
+                <input type="text" name="paymentType"  required="required" class="form-control" value="Card" readonly/>
               </div><br>
             <label>Card Holder Name</label>
               <div>
-                <input type="text" name="cardHolderName" class="form-control" value="">
+                <input type="text" name="cardHolderName"  required="required" class="form-control" value="">
               </div><br>
               
             <label>Select Bank </label>
@@ -179,11 +179,11 @@
               
             <label>Card Number</label>
               <div>
-                <input type="text" name="cardNum" class="form-control" value="">
+                <input type="text" name="cardNum"  required="required" class="form-control" value="">
               </div><br>
             <label>Cvv</label>
               <div>
-                <input type="text" name="cardCvv" class="form-control" value="">
+                <input type="text" name="cardCvv"  required="required" class="form-control" value="">
               </div><br>
                  
             <div class="field btn">
