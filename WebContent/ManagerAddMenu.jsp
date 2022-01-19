@@ -140,15 +140,15 @@
 	          	<form action="ManagerAddMenuServlet" method="post" enctype="multipart/form-data">
 					<div class="form-group">
 						<label>Menu Name :</label>
-						<input type="text" class="form-control" name="menuName" value=""/>
+						<input type="text" class="form-control" name="menuName"  required="required" value=""/>
 					</div>
 					<div class="form-group">
 				    	<label>Description :</label>
-						<input type="text" class="form-control" name="menuDesc" value=""/>
+						<input type="text" class="form-control" name="menuDesc"  required="required" value=""/>
 					</div>
 					<div class="form-group">
 						<label>Price :</label>
-						<input type="number" class="form-control" name="menuPrice" value=""/>
+						<input type="number" class="form-control" name="menuPrice" required="required" value=""/>
 					</div>  
 						<div class="form-group">
 						<label>Image :</label>
