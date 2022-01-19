@@ -125,15 +125,15 @@
               </div>
               <div>
               	<label><b>Name :</b></label>
-                <input type="text" class="form-control" name="staffName" value="<c:out value="${st.staffName}" />"/>
+                <input type="text" class="form-control" name="staffName"  required="required" value="<c:out value="${st.staffName}" />"/>
               </div>
               <div>
               	<label><b>Password :</b></label>
-                <input type="text" class="form-control" name="staffPassword" value="<c:out value="${st.staffPassword}" />"/>
+                <input type="text" class="form-control" name="staffPassword"  required="required" value="<c:out value="${st.staffPassword}" />"/>
               </div>
               <div>
               	<label><b>Contact No :</b></label>
-                <input type="text" class="form-control" name="staffPhone" value="<c:out value="${st.staffPhone}" />"/>
+                <input type="text" class="form-control" name="staffPhone"  required="required" value="<c:out value="${st.staffPhone}" />"/>
               </div>
               <div>
               	<label><b>Category :</b></label>
