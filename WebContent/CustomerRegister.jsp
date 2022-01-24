@@ -26,7 +26,7 @@
                <form action="CustomerRegisterServlet" method="post">
                <div class="form-group">
                <label>Customer Email</label>
-               <input type="text" class="form-control" placeholder="Email" name="custEmail" required="required">
+               <input type="email" class="form-control" placeholder="Email" name="custEmail" required="required">
                </div>
                
                <div class="form-group">
